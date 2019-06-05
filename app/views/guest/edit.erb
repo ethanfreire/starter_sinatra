@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Edit Username</title>
+  </head>
+    <body>
+        <h1>Please Edit Username</h1>
+        <form action="/guests/<%= @guests.id %>" method="post">
+          <input type="hidden" name="_method" value="PUT">
+          <label for="guest">Guest</label>
+          <input type="text" name="guest" value="<%= @guest.name %>">
+          <input type="submit" value="submit">
+
+      </form>
+    </body>
+  </html>

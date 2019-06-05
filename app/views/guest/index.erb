@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>All Guests</title>
+</head>
+<body>
+  <% @guests.each do |guest|%>
+  <li>
+    <%= guest.name%>
+
+   </li>
+   <% end %>
+
+</body>
+</html>

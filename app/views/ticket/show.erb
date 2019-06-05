@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>specific ticket</title>
+  </head>
+  <body>
+    <div><%guest = Guest.all.find do |id| %>
+       <% id.id == @ticket.guest_id %>
+       <%end%>
+          <%= guest.name %>
+    </div>
+    <%show = Show.all.find do |id| %>
+       <% id.id == @ticket.show_id %>
+       <%end%>
+          <%= show.name %> 
+    <div>
+
+    </div>
+    <!-- <div><%=@ticket.guest_id%></div>
+    <div><%=@ticket.show_id%></div> -->
+    <!-- <a href="/tickets/new" >
+      Would you like to buy this ticket? -->
+      <!-- </a> -->
+  </body>
+</html>

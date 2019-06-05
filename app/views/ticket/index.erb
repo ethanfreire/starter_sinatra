@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>List of Tickets</title>
+  </head>
+  <body>
+    <ul>
+    <%@tickets.each do |ticket|%>
+      <h2 id = "<%=ticket.id%>"> </h2>
+    <a href=<%="/tickets/#{ticket.id}"%>>
+      <h3><%=ticket.guest_id%> , <%=ticket.show_id%></h3> </a></br>
+      <%end%>
+
+      </ul>
+
+
+  </body>
+</html>
